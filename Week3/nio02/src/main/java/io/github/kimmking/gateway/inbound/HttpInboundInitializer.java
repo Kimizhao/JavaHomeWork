@@ -11,9 +11,9 @@ import java.util.List;
 
 public class HttpInboundInitializer extends ChannelInitializer<SocketChannel> {
 	
-	private List<String> proxyServer;
+	private String proxyServer;
 	
-	public HttpInboundInitializer(List<String> proxyServer) {
+	public HttpInboundInitializer(String proxyServer) {
 		this.proxyServer = proxyServer;
 	}
 	
