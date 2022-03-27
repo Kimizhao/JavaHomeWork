@@ -392,3 +392,43 @@ Runnable 接口
 
 Thread状态
 
+
+
+## Week4
+
+### 1.Java并发包
+
+
+
+
+
+https://shimo.im/docs/AS6dIl9n7e8fWO99/ 《Java训练营知识点430问》，可复制链接后用石墨文档 App 或小程序打开
+
+
+
+### 2.锁
+
+
+
+### 3.原子计数类
+
+
+
+
+
+### 4.并发工具类
+
+
+
+### 5.
+
+ArrayList、LinkedList 均存在线程安全问题。
+
+既然线程安全是写冲突和读写冲突导致的
+最简单办法就是，读写都加锁。
+例如：
+
+- 1.ArrayList 的方法都加上 synchronized -> Vector
+- 2.Collections.synchronizedList，强制将 List 的操作加上同步
+- 3.Arrays.asList，不允许添加删除，但是可以 set 替换元素
+- 4.Collections.unmodifiableList，不允许修改内容，包括添加删除和 set
